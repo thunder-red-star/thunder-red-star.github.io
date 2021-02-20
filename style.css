@@ -3,6 +3,13 @@
   src: url(fonts/qualybold.ttf)
   format('truetype');
 }
+
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins.ttf)
+  format('truetype');
+}
+
 .typewriter p {
   text-align: center;
   font-family: qualy;
@@ -30,4 +37,12 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+
+.title {
+  font-family: Poppins;
+}
+
+.text {
+  font-family: Poppins;
 }
