@@ -1,0 +1,73 @@
+/* Loads all fonts for usage in other CSS. 
+ *   
+ * Fonts:   
+ *  > DM Sans
+ *  > DM Serif Display
+ *  > DM Serif Text
+ *  > DM Mono 
+ */
+
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(../fonts/dm-sans/DMSans-Regular.ttf)
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url(../fonts/dm-sans/DMSans-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url(../fonts/dm-sans/DMSans-Italic.ttf);
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url(../fonts/dm-sans/DMSans-Medium.ttf);
+  font-weight: medium;
+}
+    
+@font-face {
+    font-family: "DM Serif Display";
+    src: url(../fonts/dm-serif/DMSerifDisplay-Regular.ttf)
+}
+    
+    
+@font-face {
+    font-family: "DM Serif Text";
+    src: url(../fonts/dm-serif/DMSerifText-Regular.ttf);
+}
+    
+@font-face {
+    font-family: "DM Serif Text";
+    src: url(../fonts/dm-serif/DMSerifText-Italic.ttf);
+    font-style: italic, oblique;
+}
+
+@font-face {
+    font-family: "DM Mono";
+    src: url(../fonts/dm-mono/DMMono-Regular.ttf);
+}
+    
+@font-face {
+    font-family: "DM Mono";
+    src: url(../fonts/dm-mono/DMMono-Italic.ttf);
+    font-style: italic, oblique;
+}
+    
+@font-face {
+    font-family: "DM Mono";
+    src: url(../fonts/dm-mono/DMMono-Medium.ttf);
+    font-weight: medium;
+}
+
+    
+@font-face {
+    font-family: "DM Mono";
+    src: url(../fonts/dm-mono/DMMono-Light.ttf);
+    font-weight: light;
+}

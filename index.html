@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta property="og:title" content="Site Title" />
-<meta property="og:title" content="my first website" />
-<meta property="og:type" content="website" />
-    <script async src="https://arc.io/widget.min.js#Tb4sDHEg"></script>
-<meta property="og:url" content="http://thunderredstar.me" />
-<meta property="og:image" content="http://thunderredstar.me/icon.png" />
-<meta property="og:description" content="test website" />
-<meta name="theme-color" content="#FF0000">
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-    <title>ThunderRedStar</title>
-  <body>
-    <style>
-.alert {
-  padding: 20px;
-  background-color: #f44336;
-  color: white;
-}
 
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.5s;
-}
+<head>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="thunderredstar.me" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://thunderredstar.me" />
+	<meta property="og:image" content="http://thunderredstar.me/icon.png" />
+	<meta property="og:description" content="ThunderRedStar's personal website." />
+	<meta name="theme-color" content="#FF0000">
 
-.closebtn:hover {
-  color: black;
-}
-</style>
+	<!-- Javascript Stuff -->
+	<script src="js/script.js">
 
+	</script>
+	<script src="js/navbar.js">
 
+	</script>
+	<script async src="https://arc.io/widget.min.js#Tb4sDHEg">
 
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js">
 
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	 crossorigin="anonymous">
 
-    <div class="typewriter"><p>ThunderRedStar</p></div>
-    <h1 class="title">Hello World!</h1>
-    <p class="text"><i>C'est moi</i>, ThunderRedStar. This website is a work in progress (hhhhh). However, I have some links that you can use!<ul>
-  <li><a href="https://discord.com/oauth2/authorize?client_id=809175820340822056&scope=bot+applications.commands&guild_id=undefined&permissions=8">My latest Discord Bot</a></li><li><a href="https://repl.it/@WilliamVongphan/">My Repl.it account</a></li></ul></p><p class="text">This site is hosted on Github Pages, but the domain is hosted on Namecheap. So there might be some issues with verifying SSL Certificates
-  smh you need to look at this page on a computer otherwise it will look bad. NEW WEBSITE COMING SOON!!!</p>
-  
-  <a class="typeform-share button" href="https://form.typeform.com/to/HE4bgzmD?typeform-medium=embed-snippet" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#0445AF;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:37.5px;text-align:center;margin:0;height:37.5px;padding:0px 25px;border-radius:6px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-size="70" target="_blank">Feedback? </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	 crossorigin="anonymous">
+
+	</script>
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/underline.css">
+
+	<!-- Other configuration -->
+	<title>ThunderRedStar</title>
+	<link rel="icon" type="image/png" href="assets/icon.png" />
+</head>
+
+<body>
+	<!-- Full Screen Navigation -->
+	<div class="navbar-toggle">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+	<script>
+		$(function () {
+            $('.navbar-toggle, nav').click(function () {
+                $('.navbar-toggle').toggleClass('navbar-on');
+                $('nav').fadeToggle();
+                $('nav').removeClass('nav-hide');
+            });
+        });
+	</script>
+	<nav class="nav-hide" id="underline">
+		<ul>
+			<li>
+				<p>ThunderRedStar</p>
+			</li>
+			<li><a href="/index.html">Home</a></li>
+			<li><a href="/projects.html">Projects</a></li>
+			<li><a href="/about.html">About</a></li>
+			<li><a href="/links.html">Links</a></li>
+			<li><a href="/contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- Other things -->
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-8 side">
+				<center>
+                        <br>
+						<h1 class="welcome">Welcome to my website!</h1>
+                        <p class="who-i-am">I am a 14 year old developer based in New York City. I like working on random programming projects, competitive programming questions (like USACO), and Discord Bots. </p<br><div class="quote"><h2>"Unlike my other website, which was "WIP" for a long time, this website will be actively updated"
+                        </h2><h3> - ThunderRedStar </h3></div>
+					</div>
+				</center>
+			</div>
+			<div class="col-lg-4 fixed title d-table-cell align-middle">
+				<br>ThunderRedStar<br><h2>Developer, Gamer, and Human</h2>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

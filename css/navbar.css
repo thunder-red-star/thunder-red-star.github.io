@@ -1,0 +1,85 @@
+/* Stylesheet for the navbar on most if not all pages */
+
+nav,
+.navbar-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(231,76,60, 0.95);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  color: white;
+}
+
+.nav-hide { display: none; }
+
+nav ul {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 !important;
+}
+
+nav ul li { list-style: none; }
+
+nav ul li a {
+font-family: "DM Sans";
+  font-size: 35pt;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul li p {
+font-family: "DM Serif Display";
+  font-size: 50pt;
+  color: inherit;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.navbar-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  height: 8px;
+  margin-bottom: 5px;
+  background-color: rgba(231,76,60, 0.95);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-on .bar1,
+.navbar-on .bar2,
+.navbar-on .bar3 { background-color: white; }
+
+.navbar-on .bar1 {
+  transform-origin: 10% 40%;
+  transform: rotate(45deg);
+}
+
+.navbar-on .bar3 {
+  transform-origin: 10% 40%;
+  transform: rotate(-45deg);
+}
+
+.navbar-on .bar2 { background-color: transparent; }

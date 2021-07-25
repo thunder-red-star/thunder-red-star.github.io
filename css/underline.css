@@ -1,0 +1,29 @@
+/* Stylesheet for link underlining. */
+
+#underline a, a:hover{
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+#underline a::before{
+text-decoration: none;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 4px;
+  color: inherit;
+  background-color: currentColor;
+  transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #underline a:hover::before{
+    text-decoration: none;
+    left: 0%;
+    right: auto;
+    width: 100%;
+  }
+}
