@@ -44,13 +44,20 @@
 }
 
 .p1 {
-    position: absolute;
     font-family: "DM Sans";
     font-size: 18px;
     background-color: #EEEE99;
+    margin: 0 !important;
+    width: 100%;
+}
+
+.p2 {
+    font-family: "DM Sans";
+    font-size: 18px;
+    background-color: #EE9999;
     height: 100%;
     margin: 0 !important;
-    width: 66.66%;
+    width: 100%;
 }
 
 .quote {
